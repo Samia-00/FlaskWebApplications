@@ -5,6 +5,7 @@ app = Flask(__name__)
 def index():
        return '<h1>Bad Request</h1>', 400
 
+from flask import make_response
 @app.route('/samia')
 def index1():
 	response = make_response('<h1>This document carries a cookie!</h1>')
